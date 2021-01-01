@@ -16,6 +16,6 @@ RUN apt-get install -y mesa-utils
 RUN apt-get install -y libxft2
 RUN apt-get install -y iputils-ping
 RUN apt-get install -y libc6-dev
-ADD cmsShow-9.4-1.linux.tar.gz /
-WORKDIR "/cmsShow-9.4-1"
+ADD cmsShow-10.2.4.linux.tar.gz /
+WORKDIR "/cmsShow-10.2.4"
 CMD ["./cmsShow", "--no-version-check", "file.root"]

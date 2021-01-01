@@ -16,10 +16,10 @@ INPUTROOTFILEPATH=$(realpath $1)
 docker run \
     -it \
     --rm \
-    --name fw9.4.1 \
+    --name fw10.2.4 \
     -e DISPLAY=$IP:0 \
     -e XAUTHORITY=/.Xauthority \
     --net host \
     -v ${HOME}/.Xauthority:/.Xauthority \
-    -v ${INPUTROOTFILEPATH}:/cmsShow-9.4-1/file.root \
-    sgnoohc/fireworks:9.4.1
+    -v ${INPUTROOTFILEPATH}:/cmsShow-10.2.4/file.root \
+    sgnoohc/fireworks:10.2.4
