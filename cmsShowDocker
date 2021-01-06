@@ -1,25 +1,33 @@
 #!/bin/bash
-usage()
-{
-    echo "Usage:"
-    echo ""
-    echo "   $0 FILE.root"
-    echo ""
-    echo ""
-    exit
-}
-if [ -z $1 ]; then usage; fi
+
+# Setting up X11 forwarding which utilizes local wifi
 IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
 echo "Your IP is set to:" $IP
 /opt/X11/bin/xhost + $IP # For Mac OSX Catalina the XQuartz xhost is not in $PATH so full path is needed
-INPUTROOTFILEPATH=$(realpath $1)
-docker run \
+
+IMAGE=sgnoohc/fireworks:9.4.1-v2
+
+# Building commandline
+CMD="docker run \
     -it \
     --rm \
     --name fw9.4.1 \
     -e DISPLAY=$IP:0 \
     -e XAUTHORITY=/.Xauthority \
     --net host \
-    -v ${HOME}/.Xauthority:/.Xauthority \
-    -v ${INPUTROOTFILEPATH}:/cmsShow-9.4-1/file.root \
-    sgnoohc/fireworks:9.4.1
+    -v ${HOME}/.Xauthority:/.Xauthority"
+for FILE in $(ls $(pwd)/*.root); do
+    echo "Mounting: local:$FILE  -->  ${IMAGE}:/cmsShow-9.4-1/${FILE##*/}"
+    CMD="${CMD} -v ${FILE}:/cmsShow-9.4-1/${FILE##*/}"
+done
+CMD="${CMD} sgnoohc/fireworks:9.4.1-v2 $*"
+
+# Printing out full docker command used
+echo "----------------------"
+echo "Running docker command"
+echo "----------------------"
+echo $CMD
+echo ""
+echo ""
+echo ""
+$CMD
