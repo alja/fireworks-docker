@@ -1,6 +1,6 @@
 # fireworks-docker
 
-## Setup X11
+## 1. Setup X11
 
 #### Install XQuartz: 
 <br>
@@ -17,13 +17,14 @@ Start XQuartz from command line using open -a XQuartz. In the XQuartz preference
 
 ![XQuartzPreferenceSetting](docs/xquartz_preferences.png)
 
-## Install Docker
+## 2. Install Docker
 Install Docker Desktop
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
-## Run cmsShow 
-Run docker with scrpt cmsShowDocker
+## 3. Run cmsShow 
+Get cmsShowDocker script and run it
 <br>
+`curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker`
 `cmsShowDocker cmsShow-11.21`
 `./cmsShow data.root`
 
