@@ -24,9 +24,8 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 ## 3. Run cmsShow 
 Get cmsShowDocker script and run it
 <br>
-`curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker`
+``curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
+cmsShowDocker cmsShow-11.21
 
-`cmsShowDocker cmsShow-11.21`
-
-`./cmsShow data.root`
+./cmsShow data.root``
 
