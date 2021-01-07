@@ -1,4 +1,4 @@
-# fireworks-docker-builder
+# fireworks-docker
 
 ## XQuartz setting for Mac
 
