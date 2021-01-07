@@ -2,27 +2,27 @@
 
 ## Setup X11
 
-### Install XQuartz: 
+#### Install XQuartz: 
 <br>
 
 https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
 
-### Setup XQuartz:
+#### Setup XQuartz:
     Start XQuartz and then go to settings (Apple + ,) and go to Security tab, and make sure you've got "Allow connections from network clients" ticked.
-### Then restart iQuartz.
+#### Then restart iQuartz.
 
-### XQuartz setting for Mac
+#### XQuartz setting for Mac
 
 Start XQuartz from command line using open -a XQuartz. In the XQuartz preferences, go to the “Security” tab and make sure you’ve got “Allow connections from network clients” ticked:
 
 ![XQuartzPreferenceSetting](docs/xquartz_preferences.png)
 
 ## Install Docker
+Install Docker Desktop
+https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
 ## Run cmsShow 
-docker pull sgnoohc/fireworks:9.4.1
-git clone https://github.com/sgnoohc/cmsdas2021visualization.git
-cd cmsdas2021visualization
-sh get_sample_commands.sh YOUR_LPC_USERNAME
-./cmsShowDocker rootfiles/dy.root
+Run docker with scrpt cmsShowDocker
+`cmsShowDocker cmsShow-11.21`
+`./cmsShow data.root`
 
