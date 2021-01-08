@@ -8,11 +8,10 @@
 https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
 
 #### Setup XQuartz:
-```
+
 Start XQuartz and then go to settings (Apple + ,) and go to Security tab, and make sure you've got 
 "Allow connections from network clients" ticked.
 Then restart iQuartz.
-```
 
 #### XQuartz setting for Mac
 
