@@ -14,6 +14,17 @@ Start XQuartz from command line using open -a XQuartz. In the XQuartz preference
 
 ![XQuartzPreferenceSetting](docs/xquartz_preferences.png)
 
+#### Review setting
+Check tcp listening and glx is enabled with plutil command
+```
+ plutil -p ~/Library/Preferences/org.macosforge.xquartz.X11.plist | grep  -E tcp\|glx
+```
+
+If that is not the case set it command line:
+```
+defaults write org.macosforge.xquartz.X11.plist nolisten_tcp -bool false
+defaults write org.macosforge.xquartz.X11.plist enable_iglx -bool true
+```
 ## 2. Install Docker
 Install Docker Desktop
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
