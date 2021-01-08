@@ -3,10 +3,7 @@
 ## 1. Setup X11
 
 #### Download XQuartz: 
-<br>
-
 https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
-
 
 #### Install XQuartz and grant all security questions at the install time
 
@@ -36,6 +33,6 @@ Get cmsShowDocker script and run with desired version of cmsShow relelease
 ```
 curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
 ./cmsShowDocker cmsShow-11.21
-# ./cmsShow data.root
+./cmsShow data.root
 ```
 
