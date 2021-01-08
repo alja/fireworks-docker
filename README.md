@@ -1,4 +1,4 @@
-# fireworks-docker
+# Running cmsShow with Docker on OSX
 
 ## 1. Setup X11
 
@@ -34,7 +34,7 @@ Get cmsShowDocker script and run with desired version of cmsShow relelease
 <br>
 ```
 curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
-cmsShowDocker cmsShow-11.21
-./cmsShow data.root
+./cmsShowDocker cmsShow-11.21
+# ./cmsShow data.root
 ```
 
