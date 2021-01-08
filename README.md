@@ -11,7 +11,7 @@ https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
 #### Install XQuartz and grant all security questions at the install time
 
 #### Configure XQuartz
-Start XQuartz from command line using open -a XQuartz. In the XQuartz preferences, go to the “Security” tab and make sure you’ve got “Allow connections from network clients” ticked. Then restart XQuartz
+Start XQuartz from command line using open -a XQuartz. In the XQuartz preferences, go to the “Security” tab and make sure you’ve got “Allow connections from network clients” ticked. Then 'restart' XQuartz
 
 ![XQuartzPreferenceSetting](docs/xquartz_preferences.png)
 
