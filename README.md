@@ -27,12 +27,16 @@ defaults write org.macosforge.xquartz.X11.plist enable_iglx -bool true
 Install Docker Desktop
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
-## 3. Run cmsShow 
+## 3. Run Docker 
 Get cmsShowDocker script and run with desired version of cmsShow relelease
 <br>
 ```
 curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
 ./cmsShowDocker cmsShow-11.21
-./cmsShow data.root
+```
+## 4. Run cmsShow in docker
+```
+...
+root@docker-desktop:/cmsShow-11.1.2# ./cmsShow data.root 
 ```
 
