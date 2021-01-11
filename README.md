@@ -36,7 +36,6 @@ curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDock
 ```
 ## 4. Run cmsShow in docker
 ```
-...
 root@docker-desktop:/cmsShow-11.1.2# ./cmsShow data.root 
 ```
 
