@@ -28,7 +28,7 @@ Install Docker Desktop
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
 ## 3. Run Docker 
-Get cmsShowDocker script and run with desired version of cmsShow relelease
+Get cmsShowDocker script and run it
 <br>
 ```
 curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
