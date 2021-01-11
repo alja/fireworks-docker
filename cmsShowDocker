@@ -2,10 +2,10 @@
 
 #!/bin/sh
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 tag" >&2
-    echo "Example cmsShowDocker cmsShow-11.2"
-    echo "Valid tags: cmsShow-11.2"
-  exit 1
+    echo "Using release cmsShow-11.2"
+    IMAGEVERSION="cmsShow-11.2"
+else
+    IMAGEVERSION=$1
 fi
 
 
@@ -15,7 +15,7 @@ IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
 echo "Your IP is set to:" $IP
 /opt/X11/bin/xhost + $IP # For Mac OSX Catalina the XQuartz xhost is not in $PATH so full path is needed
 
-IMAGEVERSION=$1
+
 IMAGE=aljamrak/fireworks:${IMAGEVERSION}
 
 # Building commandline
