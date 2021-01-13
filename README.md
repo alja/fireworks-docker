@@ -39,3 +39,4 @@ curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDock
 root@docker-desktop:/cmsShow-11.1.2# ./cmsShow data.root 
 ```
 
+![Docker terminal](docs/docker.png)
