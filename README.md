@@ -32,7 +32,7 @@ Get cmsShowDocker script and run it
 <br>
 ```
 curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
-./cmsShowDocker cmsShow-11.21
+./cmsShowDocker
 ```
 ## 4. Run cmsShow in docker
 ```
