@@ -35,10 +35,12 @@ curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDock
 ./cmsShowDocker
 ```
 <br>
-The default cmsShow version in the docker version is the `latest` latest. You can specify tarball version in the  `cmsShowDocker` argument. 
+The default cmsShow version in the docker version is the latest latest. You can specify tarball version in the cmsShowDocker argument. 
 <br>
+
 ```
-./cmsShowDocker cmsShow-9.4
+curl -O https://raw.githubusercontent.com/alja/fireworks-docker/main/cmsShowDocker
+./cmsShowDocker
 ```
 
 See  [dockerhub](https://hub.docker.com/repository/docker/aljamrak/fireworks/tags?page=1&ordering=last_updated) for supported versions.
