@@ -2,7 +2,7 @@
 
 ## 1. Setup X11
 
-#### Download XQuartz XQuartz-2.7.11.dmg: 
+#### Download XQuartz-2.7.11: 
 https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
 
 #### Install XQuartz and grant all security questions at the install time
