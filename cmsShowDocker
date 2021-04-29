@@ -8,6 +8,7 @@ else
     IMAGEVERSION=$1
 fi
 
+DISPLAY=:0.0
 
 # Setting up X11 forwarding which utilizes local wifi
 echo "-----------------------"
