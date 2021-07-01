@@ -51,3 +51,15 @@ root@docker-desktop:/cmsShow-11.1.2# ./cmsShow data.root
 ```
 
 ![Docker terminal](docs/docker.png)
+
+##  Issues
+The [cmsShowDocker](https://github.com/alja/fireworks-docker/blob/main/cmsShowDocker) scrip is the most simple short script to start Fireworks in docker. Users may need to modify.
+
+### Accessing local files
+ * You can access local files by running conainer using mount option. Seem more info at [Docker Mounts](https://docs.docker.com/storage/bind-mounts/)
+
+ * A *docker cp* is also a tool one case use to move root files into the docker
+
+
+### Default network name
+The cmsShowDocker script exact *en0* as the local network. Please edit the network name in the script.
