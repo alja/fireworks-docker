@@ -8,7 +8,11 @@ else
     IMAGEVERSION=$1
 fi
 
-DISPLAY=:0.0
+osv=`sw_vers -productVersion | awk '{split($0, a, "\."); print a[1];}'`
+if [ $osv -eq "11" ]; then
+    DISPLAY=:0.0
+    echo "set DISPLAY=$DISPLAY for Big Sur"
+fi
 
 # Setting up X11 forwarding which utilizes local wifi
 echo "-----------------------"
