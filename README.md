@@ -1,4 +1,4 @@
-# Running cmsShow with Docker on OSX
+# Running cmsShow with Docker on OSX --- OUTDATED !!!
 
 ## 1. Setup X11
 
